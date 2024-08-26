@@ -1,104 +1,122 @@
 <!DOCTYPE html>
 <html lang="en" data-theme="light">
 
-<!-- ViewPort and Meta Tag-Link -->
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<!-- Title -->
-<title>Hockey's | Show Your Performance</title>
-<!-- Favicon Icon -->
-<link rel="shortcut icon" href="./icons/favicon.webp" type="image/x-icon">
-<!-- Font Awesome -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
-    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
-<!-- Google Font - Manrope Link -->
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
-<!-- DaisyUI + TailwindCSS CDN -->
-<link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
-<script src="https://cdn.tailwindcss.com"></script>
-<!-- Adding Custom CSS -->
-<style type="text/tailwindcss">
-    @layer utilities {
+<head>
+    <!-- ViewPort and Meta Tag-Link -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Title -->
+    <title>Hockey's | Show Your Performance</title>
+    <!-- Favicon Icon -->
+    <link rel="shortcut icon" href="./icons/favicon.webp" type="image/x-icon">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Google Font - Manrope Link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+    <!-- DaisyUI + TailwindCSS CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Adding Custom CSS -->
+    <style type="text/tailwindcss">
+        @layer utilities {
       .hiddenr {
         display: none !important;
         }
     }
 </style>
-<!-- Customizing Tailwind CSS Config -->
-<script>
-    tailwind.config = {
-        theme: {
-            fontFamily: {
-                'manrope': ['Manrope', 'sans-serif'],
-            },
-            extend: {
-                backgroundImage: {
-                    'white-gradient': "linear-gradient(to top, #fff, #eee)",
-                    'paper-bg': 'url(./images/discuss-bg.jpg)',
+    <!-- Customizing Tailwind CSS Config -->
+    <script>
+        tailwind.config = {
+            theme: {
+                fontFamily: {
+                    'manrope': ['Manrope', 'sans-serif'],
                 },
-                colors: {
-                    'grelow': '#abef5f',
+                extend: {
+                    backgroundImage: {
+                        'white-gradient': "linear-gradient(to top, #fff, #eee)",
+                        'program1': 'url(./Images/program1.png)',
+                        'program2': 'url(./Images/program2.png)',
+                        'program3': 'url(./Images/program3.png)',
+                        'product1': 'url(./Images/product1.png)',
+                        'product2': 'url(./Images/product2.png)',
+                        'product3': 'url(./Images/product3.png)',
+                        'product4': 'url(./Images/product4.png)',
+                        'product5': 'url(./Images/product5.png)',
+                        'product6': 'url(./Images/product6.png)',
+                    },
+                    colors: {
+                        'pinkred': '#ff4240',
+                    }
                 }
             }
         }
-    }
-</script>
+    </script>
 
 </head>
 
 
 <body class="font-manrope">
 
-    <!--  -->
-    <section class="container mx-auto">
-        <div class="navbar bg-base-100">
-            <div class="navbar-start">
-                <div class="dropdown">
-                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
-                            stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                d="M4 6h16M4 12h8m-8 6h16" />
-                        </svg>
+    <!-- Header Section -->
+    <header class="container mx-auto border-4 border-red-600">
+        <!-- Navbar Section -->
+        <section>
+            <div class="navbar bg-base-100">
+                <div class="navbar-start">
+                    <div class="dropdown">
+                        <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h8m-8 6h16" />
+                            </svg>
+                        </div>
+                        <ul tabindex="0"
+                            class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+                            <li><a>Item 1</a></li>
+                            <li>
+                                <a>Parent</a>
+                                <ul class="p-2">
+                                    <li><a>Submenu 1</a></li>
+                                    <li><a>Submenu 2</a></li>
+                                </ul>
+                            </li>
+                            <li><a>Item 3</a></li>
+                        </ul>
                     </div>
-                    <ul tabindex="0"
-                        class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+                    <h1 class="btn btn-ghost text-xl">
+                        Hockey<sup class="ml-[-7px] mr-[-10px] text-2xl text-pinkred">,</sup>s
+                    </h1>
+                </div>
+                <div class="navbar-center hidden lg:flex">
+                    <ul class="menu menu-horizontal px-1">
                         <li><a>Item 1</a></li>
                         <li>
-                            <a>Parent</a>
-                            <ul class="p-2">
-                                <li><a>Submenu 1</a></li>
-                                <li><a>Submenu 2</a></li>
-                            </ul>
+                            <details>
+                                <summary>Parent</summary>
+                                <ul class="p-2">
+                                    <li><a>Submenu 1</a></li>
+                                    <li><a>Submenu 2</a></li>
+                                </ul>
+                            </details>
                         </li>
                         <li><a>Item 3</a></li>
                     </ul>
                 </div>
-                <a class="btn btn-ghost text-xl">daisyUI</a>
+                <div class="navbar-end">
+                    <a class="btn">Button</a>
+                </div>
             </div>
-            <div class="navbar-center hidden lg:flex">
-                <ul class="menu menu-horizontal px-1">
-                    <li><a>Item 1</a></li>
-                    <li>
-                        <details>
-                            <summary>Parent</summary>
-                            <ul class="p-2">
-                                <li><a>Submenu 1</a></li>
-                                <li><a>Submenu 2</a></li>
-                            </ul>
-                        </details>
-                    </li>
-                    <li><a>Item 3</a></li>
-                </ul>
-            </div>
-            <div class="navbar-end">
-                <a class="btn">Button</a>
-            </div>
-        </div>
-    </section>
+        </section>
+
+        <!-- Banner Section -->
+        <section></section>
+
+    </header>
 
 </body>
 
