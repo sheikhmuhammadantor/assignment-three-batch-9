@@ -41,12 +41,12 @@
                         'program1': 'url(./Images/program1.png)',
                         'program2': 'url(./Images/program2.png)',
                         'program3': 'url(./Images/program3.png)',
-                        'product1': 'url(./Images/product1.png)',
-                        'product2': 'url(./Images/product2.png)',
-                        'product3': 'url(./Images/product3.png)',
-                        'product4': 'url(./Images/product4.png)',
-                        'product5': 'url(./Images/product5.png)',
-                        'product6': 'url(./Images/product6.png)',
+                        // 'product1': 'url(./Images/product1.png)',
+                        // 'product2': 'url(./Images/product2.png)',
+                        // 'product3': 'url(./Images/product3.png)',
+                        // 'product4': 'url(./Images/product4.png)',
+                        // 'product5': 'url(./Images/product5.png)',
+                        // 'product6': 'url(./Images/product6.png)',
                     },
                     colors: {
                         'pinkred': '#ff4240',
@@ -64,45 +64,39 @@
     <!-- Header Section -->
     <header class="container mx-auto border-4 border-red-600">
         <!-- Navbar Section -->
-        <section>
-            <div class="navbar bg-base-100">
-                <div class="navbar-start">
-                    <div class="dropdown">
-                        <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
-                            <i class="fa-solid fa-bars"></i>
-                        </div>
-                        <ul tabindex="0"
-                            class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
-                            <li><a>About</a></li>
-                            <li><a>Page</a></li>
-                            <li><a>Blog</a></li>
-                        </ul>
+        <div class="navbar bg-base-100">
+            <div class="navbar-start">
+                <div class="dropdown">
+                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                        <i class="fa-solid fa-bars"></i>
                     </div>
-                    <h1 class="btn btn-ghost text-xl">
-                        Hockey<sup class="ml-[-7px] mr-[-10px] text-2xl text-pinkred">,</sup>s
-                    </h1>
-                </div>
-                <div class="navbar-center hidden lg:flex">
-                    <ul class="menu menu-horizontal px-1">
-                        <li><a>Home</a></li>
+                    <ul tabindex="0"
+                        class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
                         <li><a>About</a></li>
                         <li><a>Page</a></li>
                         <li><a>Blog</a></li>
-                        <li><a>Contact</a></li>
                     </ul>
                 </div>
-                <div class="navbar-end">
-                    <div class="navbar-center hidden lg:flex">
-                        <i class="fa-solid fa-magnifying-glass mr-5 text-gray-400"></i>
-                    </div>
-                    <a class="btn text-white bg-pinkred hover:text-black">Get Ticket</a>
-                </div>
+                <h1 class="btn btn-ghost text-xl">
+                    Hockey<sup class="ml-[-7px] mr-[-10px] text-2xl text-pinkred">,</sup>s
+                </h1>
             </div>
-        </section>
-
-        <!-- Banner Section -->
-        <section class="container">
-
+            <div class="navbar-center hidden lg:flex">
+                <ul class="menu menu-horizontal px-1 font-semibold">
+                    <li class="text-pinkred"><a>Home</a></li>
+                    <li><a>About</a></li>
+                    <li><a>Page</a></li>
+                    <li><a>Blog</a></li>
+                    <li><a>Contact</a></li>
+                </ul>
+            </div>
+            <div class="navbar-end">
+                <div class="navbar-center hidden lg:flex">
+                    <i class="btn fa-solid fa-magnifying-glass mr-5 text-gray-400"></i>
+                </div>
+                <a class="btn text-white bg-pinkred hover:text-black">Get Ticket</a>
+            </div>
+        </div>
         </section>
     </header>
 
